@@ -61,3 +61,9 @@
 [submodule "bundle/omnicppcomplete"]
 	path = bundle/omnicppcomplete
 	url = https://github.com/vim-scripts/OmniCppComplete.git
+[submodule "bundle/lookupfile"]
+	path = bundle/lookupfile
+	url = git://github.com/vim-scripts/lookupfile.git
+[submodule "bundle/genutils"]
+	path = bundle/genutils
+	url = git://github.com/vim-scripts/genutils.git
