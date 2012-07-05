@@ -250,16 +250,20 @@ if filereadable($VIRTUAL_ENV . '/.vimrc')
     source $VIRTUAL_ENV/.vimrc
 endif
 
-set colorcolumn=79
-
+if version >= 703
+    set colorcolumn=79
+end
 
 "colorscheme lucius
 "colorscheme mustang
 
 set gfn=Monaco:h18
  
-
-let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+if has("macunix")
+    let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+else
+    let Tlist_Ctags_Cmd='/usr/bin/ctags'
+endif
 
 "inoremap ( ()<LEFT>
 "inoremap [ []<LEFT>
