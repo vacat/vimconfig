@@ -258,12 +258,12 @@ end
 "colorscheme mustang
 
 set gfn=Monaco:h18
- 
-if has("macunix")
-    let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
-else
-    let Tlist_Ctags_Cmd='/usr/bin/ctags'
-endif
+
+"if has("mac") || has("macunix")
+"    let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+"else
+"    let Tlist_Ctags_Cmd='/usr/bin/ctags'
+"endif
 
 "inoremap ( ()<LEFT>
 "inoremap [ []<LEFT>
