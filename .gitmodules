@@ -67,3 +67,6 @@
 [submodule "bundle/genutils"]
 	path = bundle/genutils
 	url = git://github.com/vim-scripts/genutils.git
+[submodule "bundle/indentguide"]
+	path = bundle/indentguide
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
