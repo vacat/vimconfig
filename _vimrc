@@ -385,3 +385,10 @@ function! SetColorColumn()
         execute "set cc-=".col_num
     endif
 endfunction
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" c-support
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"let g:c_author = g:author
+"let g:c_email = g:email
+"let g:c_company = g:company

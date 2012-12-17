@@ -73,3 +73,9 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git://github.com/plasticboy/vim-markdown.git
+[submodule "bundle/c-support"]
+	path = bundle/c-support
+	url = git://github.com/vim-scripts/c.vim.git
+[submodule "bundle/a"]
+	path = bundle/a
+	url = git://github.com/vim-scripts/a.vim.git
