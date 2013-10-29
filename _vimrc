@@ -74,6 +74,13 @@ map <leader>mg :call MakeGreen()
 " Pathogen - Allows us to organize our vim plugins
 " ==========================================================
 " Load pathogen with docs for all plugins
+let g:pathogen_disabled = []
+
+if v:version < '701'
+    call add(g:pathogen_disabled, 'lookupfile')
+    call add(g:pathogen_disabled, 'minibufexpl')
+endif
+
 filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
