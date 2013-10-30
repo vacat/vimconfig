@@ -4,6 +4,23 @@
 set nocompatible
 let mapleader=","             " change the leader to be a comma vs slash
 
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+map <leader>l :Align
+nmap <leader>a :Ack
+nmap <leader>b :CtrlPBuffer<CR>
+nmap <leader>d :NERDTreeToggle<CR>
+nmap <leader>f :NERDTreeFind<CR>
+nmap <leader>t :CtrlP<CR>
+nmap <leader>T :CtrlPClearCache<CR>:CtrlP<CR><CR>
+nmap <leader>] :TagbarToggle<CR>
+nmap <leader><space> :call whitespace#strip_trailing()<CR>
+nmap <leader>g :GitGutterToggle<CR>
+nmap <leader>c <Plug>Kwbd$
+map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+
 " Toggle the tasklist
 map <leader>td <Plug>TaskList
 
@@ -53,7 +70,7 @@ imap <C-W> <C-O><C-W>
 " Open NerdTree
 map <leader>n :NERDTreeToggle<CR>
 
-map <leader>t :TlistToggle<CR>
+"map <leader>t :TlistToggle<CR>
 
 " Run command-t file search
 map <leader>f :CommandT<CR>
@@ -82,6 +99,7 @@ if v:version < '701'
 endif
 
 filetype off
+"call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
