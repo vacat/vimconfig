@@ -205,6 +205,11 @@ set smarttab                " Handle tabs more intelligently
 set hlsearch                " Highlight searches by default.
 set incsearch               " Incrementally search while typing a /regex
 
+""" Diff
+if &diff
+    set diffopt+=iwhite     " ignore white space
+endif
+
 """" Display
 if has("gui_running")
     colorscheme desert
