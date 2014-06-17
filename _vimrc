@@ -265,6 +265,11 @@ au BufRead *.py set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\ ]%\
 " Don't let pyflakes use the quickfix window
 let g:pyflakes_use_quickfix = 0
 
+" nginx config
+au BufRead,BufNewFile *nginx.conf set ft=nginx
+au BufRead,BufNewFile /etc/nginx/* set ft=nginx
+au BufRead,BufNewFile /home/a/share/tengine/conf/* set ft=nginx
+
 " Add the virtualenv's site-packages to vim path
 if has("python")
 py << EOF
