@@ -9,7 +9,9 @@ elif [ $OSTYPE == darwin11 ]; then
 elif [ $OSTYPE == darwin12 ]; then
     OS="mac" 
 elif [ $OSTYPE == darwin13 ]; then
-    OS="mac" 
+    OS="mac"
+elif [ $OSTYPE == darwin15 ]; then
+    OS="mac"
 elif [ $OSTYPE == cygwin ]; then
     OS="cygwin"
 elif [ $OSTYPE == win32 ]; then
