@@ -167,8 +167,10 @@ set softtabstop=4           " <BS> over an autoindent deletes both spaces.
 set expandtab               " Use spaces, not tabs, for autoindent/tab key.
 set shiftround              " rounds indent to a multiple of shiftwidth
 set matchpairs+=<:>         " show matching <> (html mainly) as well
-set foldmethod=indent       " allow us to fold on indents
+set foldmethod=syntax       " syntax-based folding
 set foldlevel=99            " don't fold by default
+" Syntax folding for common languages
+autocmd FileType python,javascript,typescript,html,css,vim,json set foldmethod=syntax
 
 " don't outdent hashes
 inoremap # #
@@ -445,5 +447,5 @@ augroup json_autocmd
   autocmd FileType json set textwidth=78 shiftwidth=2 
   autocmd FileType json set softtabstop=2 tabstop=8 
   autocmd FileType json set expandtab 
-  autocmd FileType json set foldmethod=syntax 
+  autocmd FileType json set foldmethod=indent
 augroup END
