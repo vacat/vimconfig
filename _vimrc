@@ -99,6 +99,10 @@ if v:version < '701'
 endif
 
 filetype off
+" Load pathogen manually before using its functions
+execute 'source ' . fnamemodify(resolve(expand('~/.vimrc')), ':h') . '/autoload/pathogen.vim'
+" Add vimconfig directory to runtime path
+let &rtp = fnamemodify(resolve(expand('~/.vimrc')), ':h') . ',' . &rtp
 "call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
